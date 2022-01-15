@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
     --text-color:#3A3A3A; 
 }
@@ -144,17 +143,55 @@ margin-left:8px;
     font-weight:bold;
     font-size:14px;
     color:#787885;
+
 }
 
+/* thanks start */
 
 
 
+
+.thanks{
+    height:500px;
+    background-image:url("../images/mountains1.jpg");
+    background-color: rgba(0, 0, 0, 0.712);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    margin-top: 50px;
+    transition: 0.5s;
+    color:white;
+    font-family: 'Luxurious Roman', cursive;
+    text-align: center;
+}
+.thanks:hover{
+    background-color: rgba(0, 0, 0, 0.418);
+}
+.thanks:hover .change{
+    color:#e4437e;
+}
+.thanks h1{
+    font-size: 38px;
+    padding-top: 60px;
+}
+.thanks p{
+    margin-top: 40px;
+    font-size: 30px;
+}
+.thanks p span{
+    color:goldenrod;
+    font-size:48px;
+    transition: 0.7s;
+}
+.thanks-btn{
+    margin: 40px auto;
+}
 /* footer starts */
 footer{
 
         background-color: #0a0826;
         height: 200px;
-        margin-top: 50px;
+       
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -211,6 +248,7 @@ footer p{
     }
     .section{
         grid-template-columns: 1fr;
+        justify-content: center;
     }
 }
 @media only screen and (min-width:689px) and (max-width:992px){
