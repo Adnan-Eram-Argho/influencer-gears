@@ -29,7 +29,17 @@ body{
     font-size:16px;
     display:flex;
     align-items: center;
+    box-shadow: 0 7px 0 0 #6b1635;
+
     }
+    .primary-btn:active{
+        position:relative;
+        top:5px;
+        box-shadow: 0 5px 0 0 #6b1635;
+    }
+.primary-btn:hover{
+    background-color:#e4437e ;
+}
 .fa-arrow-right{
  margin-left: 10px;
 }
@@ -160,7 +170,7 @@ footer h2{
 footer p{
     color:white;
     font-size:14;
-    font-weight:bold;
+   
 }
 .icons{
     color:white;
@@ -171,4 +181,41 @@ footer p{
     padding:7px;
     border-radius:50%;
     background-color:#252349 ;
+}
+
+@media only screen and (max-width:688px ){
+    .container{
+        width:100%;
+    }
+    nav{
+        justify-content: center;
+    }
+    .journey{
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .journey-t{
+        margin-bottom: 30px;
+    }
+    .journey-t h1{
+        text-align: center;
+    }
+    .journey-t p{
+        text-align: center;
+    }
+    .btn{
+        display: flex;
+  
+        justify-content: center;
+    }
+    .section{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (min-width:689px) and (max-width:992px){
+.section{
+    grid-template-columns: repeat(2,1fr);
+}
+
 }
